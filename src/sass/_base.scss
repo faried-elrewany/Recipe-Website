@@ -32,7 +32,7 @@ html {
   font-size: 62.5%;
 
   @media only screen and (max-width: $bp-medium) {
-    font-size: 50%;
+    font-size: 56%;
   }
 }
 
@@ -45,6 +45,11 @@ body {
   background-size: cover;
   background-repeat: no-repeat;
   min-height: calc(100vh - 2 * 4vw);
+
+  @media (max-width: 800px) {
+    background-image: none;
+    background-color: #fff;
+  }
 }
 
 .container {
@@ -67,5 +72,13 @@ body {
     max-width: 100%;
     margin: 0;
     border-radius: 0;
+  }
+
+  @media (max-width: 800px) {
+    min-height: 100%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    box-shadow: none;
   }
 }

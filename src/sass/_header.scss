@@ -10,6 +10,28 @@
     height: 4.6rem;
     display: block;
   }
+  @media (max-width: 800px) {
+    flex-direction: column;
+    padding: 30px 0;
+    gap: 30px;
+
+    &__logo {
+      margin: 0 auto;
+    }
+
+    .nav {
+      margin-right: 0;
+      width: 100%;
+    }
+    .nav__list {
+      display: flex;
+      justify-content: space-around;
+    }
+    .search {
+      width: 90%;
+      justify-content: space-between;
+    }
+  }
 }
 
 .search {
@@ -43,10 +65,6 @@
 
     @media only screen and (max-width: $bp-medium) {
       width: auto;
-
-      &::placeholder {
-        color: white;
-      }
     }
   }
 
@@ -140,5 +158,13 @@
   .nav__btn--bookmarks:hover + & {
     visibility: visible;
     opacity: 1;
+  }
+}
+
+.search {
+  @media (max-width: 350px) {
+    &__btn {
+      padding: 0.5rem;
+    }
   }
 }
