@@ -1,6 +1,6 @@
 # <p align="center">Forkify Project</p>
 
-### Recipe website allows you to search over 1,000,000 recipe
+## Recipe website allows you to search over 1,000,000 recipe
 
 #### FEATURES
 
